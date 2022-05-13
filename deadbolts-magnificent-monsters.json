@@ -1,0 +1,1889 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_schema-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "DeadboltsMagnificentMonsters",
+				"abbreviation": "DMM",
+				"full": "Deadbolt's Magnificent Monsters!",
+				"url": "",
+				"authors": ["Deadbolt"],
+				"convertedBy": ["Deadbolt"],
+				"version": "v1.0.0"
+			}
+		],
+		"dateAdded": 1652468421,
+		"dateLastModified": 1652468421
+	},
+	"book": [
+		{
+			"name": "Deadbolt's Magnificent Monsters!",
+			"id": "DMM",
+			"source": "DMM",
+			"group": "homebrew",
+			"author": "Deadbolt",
+			"published": "2022-05-01",
+			"contents": []
+		}
+	],
+	"monster": [
+		{
+			"name": "Zhentarim Cut Throat",
+			"shortName": "Cut Throat",
+			"source": "DeadboltsMagnificentMonsters",
+			"page": 1,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"NX",
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 4",
+				"average": 13
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+2",
+				"deception": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The cut throat has advantage on an attack roll against a creature if at least one of the cut throat's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rapier",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Pitch Dust (3/day)",
+					"entries": [
+						"When a creature misses the cut throat with a melee weapon attack, the cut throat can throw pitch dust at the target. Target makes a {@dc 13} Dexterity save or is {@condition blinded} (disadvantage on attacks and checks relying on sight) until the end of their next turn."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Bandit.png",
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": false
+		},
+		{
+			"name": "Orc Earthguard",
+			"source": "DeadboltsMagnificentMonsters",
+			"page": 2,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"orc"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item hide armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": {
+					"number": 40,
+					"condition": "(wolf form only)"
+				},
+				"burrow": {
+					"number": 5,
+					"condition": "(fox form only)"
+				},
+				"climb": {
+					"number": 30,
+					"condition": "(goat form only)"
+				},
+				"fly": {
+					"number": 60,
+					"condition": "(owl form only)"
+				}
+			},
+			"str": 12,
+			"dex": 13,
+			"con": 16,
+			"int": 10,
+			"wis": 16,
+			"cha": 9,
+			"save": {
+				"int": "+3",
+				"wis": "+6"
+			},
+			"skill": {
+				"nature": "+3",
+				"perception": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60ft. (beast form only)"
+			],
+			"passive": 16,
+			"resist": [],
+			"languages": [
+				"Common",
+				"Druidic"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Humanoid Form Only)",
+					"headerEntries": [
+						"The druid is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}; {@hit 6} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell fog cloud}",
+								"{@spell speak with animals}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell moonbeam}",
+								"{@spell pass without trace}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell call lightning}",
+								"{@spell conjure animals}",
+								"{@spell sending}",
+								"{@spell wind wall}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell summon elemental|TCE}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The druid makes two melee attacks."
+					]
+				},
+				{
+					"name": "Maul (Beast Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 1}) piercing damage."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The druid magically polymorphs into a beast form—fox, mountain goat, owl, or wolf—or back into its humanoid form. Any equipment it is wearing or carrying is absorbed or borne by the beast form (the druid's choice). It reverts to its humanoid form when it dies. The druid's statistics are the same in each form, except where noted in this stat block."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/SaF/tokens/White%20Tusk%20Shaman.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CD",
+				"F"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"prone"
+			],
+			"hasFluff": false
+		},
+		{
+			"name": "Zhentarim Quickshot",
+			"shortName": "Quickshot",
+			"source": "DeadboltsMagnificentMonsters",
+			"page": 3,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"NX",
+				"C",
+				"G",
+				"NY",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+2",
+				"deception": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"name": "Light Repeating Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Mark of the Black",
+					"entries": [
+						"The Quickshot can use their action to mark a target. A Quickshot has advantage on attacks against target they have marked and the target takes 2 extra damage from attacks that hit."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Scramble",
+					"entries": [
+						"The Quickshot moves 15 ft. without provoking opportunity attacks."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"hill",
+				"urban"
+			],
+			"fluff": {
+				"name": "Bandit",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.",
+									"Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Bandit.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bandit.mp3"
+			},
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Felgolos the Fortunate",
+			"shortName": "Felgolos",
+			"group": [
+				"Metallic Dragon"
+			],
+			"source": "DeadboltsMagnificentMonsters",
+			"page": 4,
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "280"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 23,
+			"int": 16,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"dex": "+5",
+				"con": "+11",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+12",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"immune": [
+				"lightning",
+				{
+					"special": "Immune to alteration, enchantment, and necromancy spells of 6th level or lower"
+				}
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"1": [
+							"{@spell frame teleport|DeadboltsMagnificentMonsters}"
+						],
+						"3": [
+							"{@spell snatchport|DeadboltsMagnificentMonsters}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The dragon can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Anti-death",
+					"entries": [
+						"If Felgolos is reduced to zero hit points by the effects of a necromancy spell, Felgolos returns to life within their lair {@dice 1d10} days later. Regrowing from a bronze egg within the lair."
+					]
+				},
+				{
+					"name": "Aura of Fate-twisting",
+					"entries": [
+						"Any creature within 30 ft. of Felgolos uses a high-variance die to roll for attacks and ability checks. If no such die is available, roll {@dice 1d4} and {@dice 1d10}. An even result on the {@dice d4} indicates that you should add the result on the {@dice d10}, odd indicates the opposite."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath Weapons {@recharge 5}",
+					"entries": [
+						"The dragon uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Lightning Breath",
+									"entry": "The dragon exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a {@dc 19} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+								},
+								{
+									"type": "item",
+									"name": "Repulsion Breath",
+									"entry": "The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a {@dc 19} Strength saving throw. On a failed save, the creature is pushed 60 feet away from the dragon."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The dragon magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice).",
+						"In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a {@dc 20} Dexterity saving throw or take 14 ({@damage 2d6 + 7}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Bronze Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"coastal"
+			],
+			"dragonCastingColor": "bronze",
+			"dragonAge": "adult",
+			"tokenUrl": "https://5e.tools/img/MM/Adult Bronze Dragon.png",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"deafened",
+				"prone"
+			],
+			"hasFluff": false
+		},
+		{
+			"name": "Child of the Blackspot",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8",
+				"average": 18
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 8,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Touch of Madness",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, range 40 ft., one target. {@h}2 ({@damage 1d4}) psychic damage. The target must make a {@dc 11} Wisdom saving throw, on a failure the target has disadvantage on its next attack."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Summon Tentacle",
+					"entries": [
+						"The child of the blackspot summons a gnarly black tentacle from the void. Appearing from the blackspot on their hand, a tentacle outstretches as far as 120 ft. from the child of the blackspot. The child of the blackspotcan make the tentacle attack a target within 5ft. as a bonus action and move the tentacle up to 20 feet. The tentacle has a {@hit 4} to hit and deals {@damage 2d8 + 3} bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "http://1.bp.blogspot.com/-QTAauTMFfT8/Vlo3GG0drrI/AAAAAAAAG-E/ETZzMgD14Do/s1600/PZO1133-DeepOneHybrid.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "http://1.bp.blogspot.com/-QTAauTMFfT8/Vlo3GG0drrI/AAAAAAAAG-E/ETZzMgD14Do/s1600/PZO1133-DeepOneHybrid.jpg",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Bloodletter",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 12,
+			"int": 12,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The fanatic has advantage on saving throws against being {@condition charmed}."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The bloodletter has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bloodletter makes two melee attacks."
+					]
+				},
+				{
+					"name": "Clawed-hand",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.worldanvil.com/uploads/images/2ca351b8d67f8cbea2fd4ae80a318b7b.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://www.worldanvil.com/uploads/images/2ca351b8d67f8cbea2fd4ae80a318b7b.jpg",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"paralyzed",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Deep One",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "13d8 + 13"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 8,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"languages": [
+				"Sahuagin"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The champion has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The deep one has advantage on saving throws against being {@condition charmed}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The champion makes two attacks with its claw and one with its tentacle, or three attacks with its claw."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 15 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage. The target is {@condition grappled} (escape {@dc 12}) if it is a Medium or smaller creature. Until this grapple ends, the deep one can't use this tentacle on another target."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/002/326/691/large/maik-beiersdorf-fisherman-v2.jpg?1460333750"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdnb.artstation.com/p/assets/images/images/002/326/691/large/maik-beiersdorf-fisherman-v2.jpg?1460333750",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Kraken Priest",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 15,
+			"cha": 14,
+			"skill": {
+				"intimidation": "+2",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The priest's spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell command}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blindness/deafness}",
+							"{@spell control water}",
+							"{@spell water walk}"
+						],
+						"1e": [
+							"{@spell call lightning}",
+							"{@spell Evard's black tentacles}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The priest can breathe air and water."
+					]
+				},
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The kraken priest has advantage on saving throws against being {@condition charmed}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Thunderous Touch",
+					"entries": [
+						"{@atk ms} {@hit 5} to hit, reach 5 ft., one creature. {@h}27 ({@damage 5d10}) thunder damage."
+					]
+				},
+				{
+					"name": "Voice of the Kraken (Recharges after a Short or Long Rest)",
+					"entries": [
+						"A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a {@dc 14} Charisma saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"underwater"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06529978-05ab-4cb2-8ea3-dc97b9163a96/d7zj0d6-489e8041-b51a-4784-80ef-66c62ae75052.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2NTI5OTc4LTA1YWItNGNiMi04ZWEzLWRjOTdiOTE2M2E5NlwvZDd6ajBkNi00ODllODA0MS1iNTFhLTQ3ODQtODBlZi02NmM2MmFlNzUwNTIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._hFTSrYvTFHH5YfRyxn2K0_7l357UKI1kFkwoOCz37A"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/06529978-05ab-4cb2-8ea3-dc97b9163a96/d7zj0d6-489e8041-b51a-4784-80ef-66c62ae75052.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA2NTI5OTc4LTA1YWItNGNiMi04ZWEzLWRjOTdiOTE2M2E5NlwvZDd6ajBkNi00ODllODA0MS1iNTFhLTQ3ODQtODBlZi02NmM2MmFlNzUwNTIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0._hFTSrYvTFHH5YfRyxn2K0_7l357UKI1kFkwoOCz37A",
+			"traitTags": [
+				"Amphibious"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"damageTags": [
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"conditionInflictSpell": [
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "The Queen's Stone Caster",
+			"shortName": "Stone Caster",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 14,
+			"cha": 8,
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks that are not adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"languages it knew in life",
+				"but can't speak"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The stone caster is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"will": [
+						"{@spell magic stone|XGE}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell earth tremor|XGE}",
+							"{@spell enlarge/reduce}",
+							"{@spell Maximilian's earthen grasp|XGE}"
+						],
+						"1e": [
+							"{@spell erupting earth|XGE}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Gargoyle.png",
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "The Queen's Stone Knight",
+			"shortName": "Stone Knight",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 8,
+			"wis": 11,
+			"cha": 8,
+			"skill": {
+				"athletics": "+5"
+			},
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks that are not adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"languages it knew in life",
+				"but can't speak"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The stone knight makes two carved arm attacks."
+					]
+				},
+				{
+					"name": "Carved Arm",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Gargoyle.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "The Queen's Stone Thrower",
+			"shortName": "Stone Thrower",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 14,
+			"int": 8,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks that are not adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"languages it knew in life",
+				"but can't speak"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The stone thrower can make three stone throw attacks."
+					]
+				},
+				{
+					"name": "Stone Throw",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 75/300 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Archer's Eye (3/Day)",
+					"entries": [
+						"Immediately after making an attack roll or a damage roll with a ranged weapon, the archer can roll a {@dice d10} and add the number rolled to the total."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"desert",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Gargoyle.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Storm Avatar",
+			"shortName": true,
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"H"
+			],
+			"type": "elemental",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 40",
+				"average": 105
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 18,
+			"int": 16,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"dex": "+5",
+				"con": "+9",
+				"wis": "+7",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+12",
+				"acrobatics": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 22,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical attacks"
+				}
+			],
+			"immune": [
+				"lightning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"prone"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The avatar doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The avatar can use its Frightful Presence or Howling Wind. It then makes two attacks with its lightning bolts. "
+					]
+				},
+				{
+					"name": "Lightning Bolt",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}10 ({@damage 2d6 + 3}) lightning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the avatar's choice that is within 120 feet of the avatar and aware of it must succeed on a {@dc 15} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the avatar's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Lightning Blast {@recharge 5}",
+					"entries": [
+						"The avatar creates a burst of electric energy in a 30-foot radius sphere. Each creature in that line must make a {@dc 16} Dexterity saving throw, taking 44 ({@damage 8d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Howling Wind",
+					"entries": [
+						"The avatar releases a burst of wind in all directions, originating from the avatar. All creatures within 15 feet of the avatar must make a {@dc 15} Strength saving throw or be pushed back 30 feet and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Static Charge",
+					"entries": [
+						"The avatar teleports to a location it can see within 50 feet. The avatar can trace a path 50 feet long when it teleports in this way. Any creature on the path must make a {@dc 15} Dexterity saving throw or take {@damage 2d10} lightning damage on a failed save, or half as much damage on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Instantaneous Burst",
+					"entries": [
+						"The avatar uses it's static charge ability."
+					]
+				},
+				{
+					"name": "Free Swing",
+					"entries": [
+						"The avatar makes a lightning bolt attack."
+					]
+				},
+				{
+					"name": "Fly",
+					"entries": [
+						"The avatar moves up to 40 feet with their fly speed."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"desert"
+			],
+			"dragonAge": "adult",
+			"traitTags": [
+				"Flyby"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"L"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Elder Black Pudding",
+			"source": "DeadboltsMagnificentMonsters",
+			"size": [
+				"L"
+			],
+			"type": "ooze",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 16,
+			"dex": 7,
+			"con": 18,
+			"int": 1,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 8,
+			"immune": [
+				"acid",
+				"cold",
+				"lightning",
+				"slashing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The pudding can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Corrosive Form",
+					"entries": [
+						"A creature that touches the pudding or hits it with a melee attack while within 5 feet of it takes 4 ({@damage 1d8}) acid damage. Any nonmagical weapon made of metal or wood that hits the pudding corrodes. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the pudding is destroyed after dealing damage. The pudding can eat through 2-inch-thick, nonmagical wood or metal in 1 round."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The pudding can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Villain Actions",
+					"entries": [
+						"The Elder Pudding has three villain actions. It can take each action once during an encounter after an enemy creature's turn. It can take these actions in any order but can only use one per round.",
+						"<b>Action 1: Volatile Burst. </b> The Elder Pudding ripples violently before splitting completely. The single large pudding splits into four small black puddings. As part of this burst, all creatures within 15 feet of the pudding must make a {@dc 13} Dexterity saving throw, taking {@damage 3d6} acid damage, or half as much on a success.",
+						"<b>Action 2: Digestion Issue. </b> A bubble begins to grow on the Elder Pudding. When it bursts, all targets within 15 feet must make a {@dc 13} Dexterity saving throw, taking {@damage 4d6} acid damage, or half as much on a success.",
+						"<b>Action 3: Merge. </b> The elder pudding's split forms all combine, adding together their remaining HP. The Elder pudding then heals {@dice 2d10}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 8d6}) acid damage. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
+						"The pudding's damage scales with it's size. If the pudding is medium this attack deals {@dice 4d6}. If the pudding is small this attack deals {@damage 2d6} damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Split",
+					"entries": [
+						"When a pudding that is Medium or larger is subjected to lightning or slashing damage, it splits into two new puddings if it has at least 10 hit points. Each new pudding has hit points equal to half the original pudding's, rounded down. New puddings are one size smaller than the original pudding."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Black Pudding.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Black Pudding.png",
+			"traitTags": [
+				"Amorphous",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"spell": [
+		{
+			"name": "Frame Teleport",
+			"source": "DeadboltsMagnificentMonsters",
+			"basicRules": true,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You link two wooden frames (such as a picture frame, mirror, window, etc.) so you can pass through one frame and exit through the other, ending the spell. ",
+				"Alternatively, you can stop partway through the link with at least one-quarter of your body on one side and the remainder on the other; this holds the magical link open for up to 1 round. ",
+				"While the link remains open you can act appropriately on either side as if the two frames were the end points of a normal doorway. This second use allows you to converse, pass objects back and forth, or make attacks at creatures on either side. If you ever pass fully onto one side or the other of the frame, the spell ends immediately.",
+				"If the spell ends while you are still partway through the doorway, you are forced completely through to the destination side and suffer {@dice 1d10} points of force damage from being \"scrambled\" by the teleport.",
+				"The spell functions regardless of the material contained within the two frames, and it does not harm that material, so you can use a mirror's frame without breaking the mirror, a painting's frame without damaging the canvas, and so on."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"You can extend the duration of the link by casting this spell at a higher level. For every 2 level's above 6th, the link remains open 1 round longer. "
+					]
+				}
+			],
+			"miscTags": [
+				"TP"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Snatchport",
+			"source": "DeadboltsMagnificentMonsters",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You target a large or smaller creature, or an object weighing up to 50 pounds. The target is teleported from one point within range, to another point within range. The destination for the target must be on a surface (you can't use this spell to drop an object or creature from 90 feet)."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"You can increase the weight or size of the target by casting this spell at higher levels. For every level above 5th you can teleport an object 50 pounds heavier. For every two levels above 5th you can teleport a creature that is one size larger."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"TP",
+				"FMV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
